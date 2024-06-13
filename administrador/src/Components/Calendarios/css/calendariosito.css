@@ -1,0 +1,71 @@
+.audit-calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #ffa500 !important;
+    color: white;
+  }
+  
+  .start-date {
+    background-color: #76c7c0;
+  }
+  
+  .end-date {
+    background-color: #f77f00;
+  }
+  
+  .accordion {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .accordion-content {
+    padding: 15px 20px;
+    display: none;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .accordion-item input[type="checkbox"] {
+    display: none;
+  }
+  
+  .accordion-item input[type="checkbox"]:checked ~ .accordion-content {
+    display: block;
+  }
+  
+  .accordion-item input[type="checkbox"]:checked ~ .accordion-header {
+    border-radius: 8px 8px 0 0;
+    background-color: #f7f7f7;
+  }
+  
